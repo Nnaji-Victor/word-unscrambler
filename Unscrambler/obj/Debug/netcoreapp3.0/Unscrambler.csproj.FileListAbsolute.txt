@@ -1,0 +1,11 @@
+C:\Users\nnaji\Downloads\DECAGON\PROJECT\word-unscrambler\Unscrambler\bin\Debug\netcoreapp3.0\Unscrambler.exe
+C:\Users\nnaji\Downloads\DECAGON\PROJECT\word-unscrambler\Unscrambler\bin\Debug\netcoreapp3.0\Unscrambler.deps.json
+C:\Users\nnaji\Downloads\DECAGON\PROJECT\word-unscrambler\Unscrambler\bin\Debug\netcoreapp3.0\Unscrambler.runtimeconfig.json
+C:\Users\nnaji\Downloads\DECAGON\PROJECT\word-unscrambler\Unscrambler\bin\Debug\netcoreapp3.0\Unscrambler.runtimeconfig.dev.json
+C:\Users\nnaji\Downloads\DECAGON\PROJECT\word-unscrambler\Unscrambler\bin\Debug\netcoreapp3.0\Unscrambler.dll
+C:\Users\nnaji\Downloads\DECAGON\PROJECT\word-unscrambler\Unscrambler\bin\Debug\netcoreapp3.0\Unscrambler.pdb
+C:\Users\nnaji\Downloads\DECAGON\PROJECT\word-unscrambler\Unscrambler\obj\Debug\netcoreapp3.0\Unscrambler.csprojAssemblyReference.cache
+C:\Users\nnaji\Downloads\DECAGON\PROJECT\word-unscrambler\Unscrambler\obj\Debug\netcoreapp3.0\Unscrambler.AssemblyInfoInputs.cache
+C:\Users\nnaji\Downloads\DECAGON\PROJECT\word-unscrambler\Unscrambler\obj\Debug\netcoreapp3.0\Unscrambler.AssemblyInfo.cs
+C:\Users\nnaji\Downloads\DECAGON\PROJECT\word-unscrambler\Unscrambler\obj\Debug\netcoreapp3.0\Unscrambler.dll
+C:\Users\nnaji\Downloads\DECAGON\PROJECT\word-unscrambler\Unscrambler\obj\Debug\netcoreapp3.0\Unscrambler.pdb
