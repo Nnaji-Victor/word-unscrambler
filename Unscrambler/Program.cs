@@ -29,26 +29,52 @@ namespace Unscrambler
                         break;
                 }
 
-                var continueUnscrambling = string.Empty;
+                var continueDecision = string.Empty;
                 do
                 {
                     Console.Write("Do you want to continue? (Y or N): ");
-                    continueUnscrambling = (Console.ReadLine() ?? string.Empty);
+                    continueDecision = (Console.ReadLine() ?? string.Empty);
 
-                } while (!continueUnscrambling.Equals("Y", StringComparison.OrdinalIgnoreCase) && 
-                !continueUnscrambling.Equals("N", StringComparison.OrdinalIgnoreCase));
+                } while (
+                !continueDecision.Equals("Y", StringComparison.OrdinalIgnoreCase) && 
+                !continueDecision.Equals("N", StringComparison.OrdinalIgnoreCase));
+
+                continuewordUnscrambler = continueDecision.Equals("Y", StringComparison.OrdinalIgnoreCase);
 
             } while (continuewordUnscrambler);
         }
 
         private static void ExcecuteScrambledWordsManualEntryScenario()
         {
-            throw new NotImplementedException();
+            var ManualInput = Console.ReadLine() ?? string.Empty;
+            string[] ScrambledWords = ManualInput.Split(',');
+            DislayMatchedUnscrambledWords(ScrambledWords);
         }
 
         private static void ExecuteScrambledWordsinFileScenario()
         {
-            throw new NotImplementedException();
+            var FileName = Console.ReadLine() ?? string.Empty;
+            string[] ScrambledWords = _fileReader.Read(FileName);
+            DislayMatchedUnscrambledWords(ScrambledWords);
+        }
+
+        private static void DislayMatchedUnscrambledWords(string[] scrambledWords)
+        {
+            string wordList = _fileReader.Read(wordListFileName);
+
+            List<MatchedWord> matchedWords = _WordMatcher.Match(scrambledWords, wordList);
+
+            if (matchedWords.Any())
+            {
+                foreach (var matchedWord in matchedWords)
+                {
+                    Console.WriteLine($"Match found for {matchedWord }");
+                }
+            }
+            else
+            {
+                Console.WriteLine("No Matches have been matched");
+            }
         }
     }
 }
